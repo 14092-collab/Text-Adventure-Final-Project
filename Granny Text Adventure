@@ -3,7 +3,7 @@ print("The door is locked. You hear Granny near.")
 health = 10
 has_key = False
 noise = 0
-choice = input("Do you search the room or hide?")
+choice = input("Do you SEARCH the room or HIDE?").lower()
 if choice = "search":
   print("You search the room.")
 has_key = True
@@ -19,7 +19,7 @@ health -= 3
 else:
   print("It stays quiet.")
 print("You see a door to the hallway.")
-action = input("Do you open the door or wait?")
+action = input("Do you OPEN the door or WAIT?").lower()
 if action == "open" and has_key:
   print("You unlock the door quietly.")
 elif action == "open":
@@ -28,7 +28,7 @@ elif action == "open":
 else:
   print("You wait and listen.")
 print("Granny comes in the hallway.")
-move = input("Do you run or hide?")
+move = input("Do you RUN or HIDE?").lower()
 if move == "run":
   print("You run toward the exit.")
   health -= 2
