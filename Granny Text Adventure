@@ -15,7 +15,6 @@ else:
 noise += 1
 if noise > 1:
   print("Granny heard you.")
-health -= 3
 else:
   print("It stays quiet.")
 print("You see a door to the hallway.")
@@ -24,7 +23,6 @@ if action == "open" and has_key:
   print("You unlock the door quietly.")
 elif action == "open":
   print("The door makes noise.")
-  health -= 2
 else:
   print("You wait and listen.")
 print("Granny comes in the hallway.")
